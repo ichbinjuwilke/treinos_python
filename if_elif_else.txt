@@ -1,0 +1,18 @@
+saldo = 1000
+saque = int(input("Digite o valor que deseja sacar."))
+
+if saldo>= saque:
+    print(f"Você está sacando {saque}. Seu saldo atual é de {saldo - saque}")
+
+elif saldo< saque:
+    resposta= int(input("Você deseja realmente sacar este valor? \nPressione 0 para sim e 1 para não."))
+        
+    if resposta== 0:
+        saldo_negativo = saque - saldo
+        print(f"Você está sacando {saldo_negativo} do cheque especial")
+     
+    elif resposta ==1:
+            print("Saque cancelado")
+
+else:
+    print("Saque não realizado.")
