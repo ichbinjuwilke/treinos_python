@@ -1,0 +1,7 @@
+# Entrada e saída de dados (criando e-mail automáticamente)
+
+nome = input("Digite o seu primeiro nome: ").strip() .lower()
+ultimo_nome= input("Digite seu último sobrenome: ") .strip() .lower()
+
+print(f"Olá, {(nome).title()} {(ultimo_nome) .title()}! Seu novo email é:", end=" ")
+print(nome,ultimo_nome, sep="_", end="@gmail.com")
