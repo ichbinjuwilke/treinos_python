@@ -11,8 +11,11 @@ elif saldo< saque:
         saldo_negativo = saque - saldo
         print(f"Você está sacando {saldo_negativo} do cheque especial")
      
-    elif resposta ==1:
+    elif resposta == 1:
             print("Saque cancelado")
+
+    else:
+        print("Opção errada")
 
 else:
     print("Saque não realizado.")
